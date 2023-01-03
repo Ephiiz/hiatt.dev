@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<fieldset>
+    <legend>{{ section.title }}</legend>
+    <div>
+        <ul class="terminal-toc">
+            {% for page in section.pages %}
+            <li><a href="{{ page.permalink | safe }}">{{ page.title }} - {{ page.date }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</fieldset>
+<br />
+{% endblock content %}

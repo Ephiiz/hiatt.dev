@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<fieldset>
+    <legend>About Me</legend>
+    <div>
+        <p>
+            I am a software engineer with experience in a variety of areas of the software stack. My main focus is
+            in systems and backend software development, but I am versed in frontend development on a more minor scale.
+            I usually program with Rust, Nim, C# or C++, but you can see my recent
+            programming activity in the figure below. A list of my projects can be found <a
+                href="{{ get_url(path='@/blog/_index.md') }}">here</a>.
+        </p>
+        <figure style="width: 68%; display: block; margin: auto"><embed
+                src="https://wakatime.com/share/@e4b16208-63fc-4137-af77-abec15bb443e/577c4c55-9601-43fb-a0a1-af9d9dff5121.svg"></embed>
+        </figure>
+    </div>
+</fieldset>
+<br />
+<fieldset>
+    <legend>Contact</legend>
+    <ul>
+        <li>Github: <a href="https://github.com/Ephiiz">Ephiiz</a></li>
+        <li>Email: <a href="mailto:taylor@hiatt.dev">taylor@hiatt.dev</a></li>
+    </ul>
+</fieldset>
+<br /><br />
+{% endblock content %}

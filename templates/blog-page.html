@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<fieldset>
+    <legend><strong>{{ page.title }}</strong> - {{ page.date }}</legend>
+    <div>
+        <p>{{ page.content | safe }}</p>
+    </div>
+</fieldset>
+<br />
+{% endblock content %}
